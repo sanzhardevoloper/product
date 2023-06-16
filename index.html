@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>MyProduct</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -14,7 +18,7 @@
 
             <div class="header-logo">
                 <img src="./img/logo.png" alt="img">
-                <img src="./img/Product.png" alt="img">
+                <img src="./img/Productly.png" alt="img">
             </div>
 
             <div class="header-nav">
@@ -29,7 +33,8 @@
             <div class="header-btn">
                 <button>Sign Up</button>
             </div>
-            <img src="./img/header.png" alt="img">
+
+            <a class="rejim" href="#"><img src="./img/header.png" alt="img"></a>
 
         </div>
     </div>
@@ -260,47 +265,69 @@
     </div>
 </section>
 
-<section id="content">
-    <div class="container">
-        <div class="content">
 
+<section id="slider">
+    <div class="container">
+        <div class="slider">
             <h1>Contents Strategies</h1>
+
             <p>
                 We focus on ergonomics and meeting you where you work.
                 It's only a keystroke away.
             </p>
 
-           <div class="content-general">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-               <div class="content-block">
-                   <img src="./img/content1.png" alt="img">
-                   <ul>By <span>Wahid Ari</span> |  03 March 2019</ul>
-                   <h2>Increasing Prosperity With Positive Thinking</h2>
-               </div>
+                    <div class="swiper-slide">
+                        <img src="./img/content1.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
 
-               <div class="content-block-two">
-                   <img src="./img/content2.png" alt="img">
-                   <ul>By <span>Wahid Ari</span> |  03 March 2019</ul>
-                   <h2>Motivation Is The First Step To Success</h2>
-               </div>
+                    <div class="swiper-slide">
+                        <img src="./img/content2.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
 
-               <div class="content-block">
-                   <img src="./img/content3.png" alt="img">
-                   <ul>By <span>Wahid Ari</span> |  03 March 2019</ul>
-                   <h2>Success Steps For Your Personal Or Business</h2>
-               </div>
+                    <div class="swiper-slide">
+                        <img src="./img/content3.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
 
-           </div>
+                    <div class="swiper-slide">
+                        <img src="./img/content1.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
 
-            <div class="content-nav">
-                <div class="content-box-one"></div>
-                <div class="content-box"></div>
-                <div class="content-box-one"></div>
+                    <div class="swiper-slide">
+                        <img src="./img/content2.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/content3.png" alt="img">
+                        <h4>By <span>Wahid Ari</span> |  03 March 2019</h4>
+                        <h3 class="swiper-slide-text">Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
             </div>
 
         </div>
     </div>
 </section>
+
+
+
 
 <section id="price">
     <div class="container">
@@ -329,7 +356,7 @@
                     <button>Order Now</button>
 
                 </div>
-                <div class="price-block-two">
+                <div class="price-block">
                     <h3>Standard</h3>
                     <h6>Brief price description</h6>
 
@@ -525,6 +552,9 @@
 
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
