@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyProduct</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    >
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,20 +25,70 @@
                 <img src="./img/Productly.png" alt="img">
             </div>
 
-            <div class="header-nav">
-                <a href="#product">Product</a>
-                <a href="#customer">Customers</a>
-                <a href="#price">Pricing</a>
-                <a href="#what">Resources</a>
+<!--            <div class="header-nav">-->
+<!--                <a href="#product">Product</a>-->
+<!--                <a href="#customer">Customers</a>-->
+<!--                <a href="#price">Pricing</a>-->
+<!--                <a href="#what">Resources</a>-->
+
+<!--                <button>Sign In</button>-->
+
+<!--                <div class="header-btn">-->
+<!--                    <button>Sign Up</button>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+            <div class="burger-menu">
+                <input id="menu__toggle" type="checkbox"/>
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" href="#">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            <button class="header-btn-one">Sign In</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            <button class="header-btn-two">Sign Up</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="#">
+                            <button class="header-btn-three">
+                                <ion-icon name="contrast-outline"></ion-icon>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <button>Sign In</button>
 
-            <div class="header-btn">
-                <button>Sign Up</button>
-            </div>
 
-            <a class="rejim" href="#"><img src="./img/header.png" alt="img"></a>
+
 
         </div>
     </div>
@@ -44,21 +98,21 @@
     <div class="container">
         <div class="work">
 
-           <div class="work-general">
-               <h1>Work at the speed of thought</h1>
+            <div class="work-general">
+                <h1>Work at the speed of thought</h1>
 
-               <p>
-                   Tools, tutorials, design and innovation experts,
-                   all in one place! The most intuitive way to imagine your next user experience.
-               </p>
+                <p>
+                    Tools, tutorials, design and innovation experts,
+                    all in one place! The most intuitive way to imagine your next user experience.
+                </p>
 
-               <div class="work-nav">
-                   <button>Get started</button>
-                   <ion-icon name="play"></ion-icon>
-                   <a href="#">Watch the Video</a>
-               </div>
-           </div>
-            
+                <div class="work-nav">
+                    <button>Get started</button>
+                    <ion-icon name="play"></ion-icon>
+                    <a href="#">Watch the Video</a>
+                </div>
+            </div>
+
             <div class="work-img">
                 <img src="./img/work.png" alt="img">
             </div>
@@ -95,9 +149,6 @@
                     <p>Personal choices and the overall personality of the person. </p>
                 </div>
             </div>
-
-
-
 
             <button>SIGN UP NOW</button>
 
@@ -139,7 +190,7 @@
     <div class="container">
         <div class="customer">
 
-            <img src="./img/customer.png" alt="img">
+            <img src="./img/customer.png" alt="img" class="customer-general-img">
 
             <div class="customer-general">
                 <h5>Easier decision making for</h5>
@@ -232,7 +283,7 @@
 
             </div>
 
-            <div class="quick-general">
+            <div class="quick-general-two">
 
                 <div class="quick-block">
 
@@ -264,7 +315,6 @@
         </div>
     </div>
 </section>
-
 
 <section id="slider">
     <div class="container">
@@ -325,9 +375,6 @@
         </div>
     </div>
 </section>
-
-
-
 
 <section id="price">
     <div class="container">
@@ -484,9 +531,13 @@
             </div>
 
             <div class="what-join">
-                <h2>Join 100 Compannies who boost their business with Product</h2>
+                <div class="what-join-box">
+                    <h2>Join 100 Compannies who boost their business with Product</h2>
+                    <img src="./img/what-join.png" alt="img">
+
+                </div>
+
                 <button>Get This</button>
-                <img src="./img/what-join.png" alt="img">
             </div>
 
         </div>
@@ -556,5 +607,11 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <script src="./js/script.js"></script>
+
 </body>
 </html>
+
+
+
+
+
